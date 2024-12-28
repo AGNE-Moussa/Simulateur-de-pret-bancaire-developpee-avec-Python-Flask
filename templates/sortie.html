@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Résultats du simulateur</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+          integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="card shadow-sm">
+            <div class="card-header bg-primary text-white">
+                <h2 class="text-center">Résumé de votre simulation</h2>
+            </div>
+            <div class="card-body">
+                <h4 class="mb-4">Données saisies</h4>
+                <ul class="list-group mb-4">
+                    <li class="list-group-item"><strong>Montant du prêt (Mpret) :</strong> {{ mpret }} €</li>
+                    <li class="list-group-item"><strong>Taux d'intérêt annuel (Tia) :</strong> {{ tia }} %</li>
+                    <li class="list-group-item"><strong>Durée (N) :</strong> {{ n }} ans</li>
+                </ul>
+                <h4 class="mb-4">Résultats de la simulation</h4>
+                <ul class="list-group">
+                    <li class="list-group-item"><strong>Mensualité (Mtmens) :</strong> {{ mtmens | round(2) }} €</li>
+                    <li class="list-group-item"><strong>Montant global (Mglobal) :</strong> {{ mglobal | round(2) }} €</li>
+                </ul>
+            </div>
+            <div class="card-footer text-center">
+                <a href="/" class="btn btn-secondary">Nouvelle simulation</a>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-HoA16QRxiRDfVE4wTZz1NcfR3Ye7I1TLFD6tnNIJ6HgQ1q6w/hKJpCVuPIp8aLKP" crossorigin="anonymous"></script>
+</body>
+</html>
