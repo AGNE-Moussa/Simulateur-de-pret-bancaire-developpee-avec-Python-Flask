@@ -31,28 +31,12 @@ Ce projet est une application Flask qui simule les mensualités et le montant to
 - pip (gestionnaire de paquets Python)
 
 ### Étapes
-1. Clonez le dépôt :
-   ```bash
-   git clone https://github.com/votre-utilisateur/simulateur-pret-bancaire.git
-   cd simulateur-pret-bancaire
 Installez les dépendances :
-
-bash
-Copier le code
 pip install flask
 Lancez l'application :
+Ouvrez votre navigateur et accédez à : http://127.0.0.1:5000
 
-bash
-Copier le code
-python app.py
-Ouvrez votre navigateur et accédez à :
-
-arduino
-Copier le code
-http://127.0.0.1:5000
 Structure du projet
-bash
-Copier le code
 simulateur-pret-bancaire/
 ├── templates/
 │   ├── entree.html      # Formulaire pour saisir les données
