@@ -33,13 +33,8 @@ Ce projet est une application Flask qui simule les mensualités et le montant to
 ### Étapes
 Installez les dépendances :
 pip install flask
+
 Lancez l'application :
+
 Ouvrez votre navigateur et accédez à : http://127.0.0.1:5000
 
-Structure du projet
-simulateur-pret-bancaire/
-├── templates/
-│   ├── entree.html      # Formulaire pour saisir les données
-│   ├── sortie.html      # Résultats affichés après le calcul
-├── app.py               # Code principal de l'application Flask
-├── README.md            # Documentation du projet
